@@ -33,9 +33,23 @@ def fibonacci_variant(n):
     fibon_num = max(x1,x2)
     return fibon_list, fibon_num
 
+‘‘‘
+同时寻找出列表的最大值和最小值
+seq：目标列表
 
+min：列表中最小值
+max：列表中最大值
+’’’
 
-
+def find_min_max(seq):
+    min = seq[0]
+    max = seq[0]
+    for i in seq:
+        if i < min:
+            min = i
+        elif i > max:
+            max = i
+    return min,max
 
 
 
