@@ -7,5 +7,40 @@
 
 ’’’
 
+‘‘‘
+生成斐波那契数列
+n:所需斐波那契数列长度
+
+fibon_list：斐波那契数列
+fibon_num：最后一位斐波那契数
+’’’
+def fibonacci_variant(n):
+    x1, x2 = 1, 1
+    fibon_list = []
+    fibon_list.append(x1)
+    fibon_list.append(x2)
+    if n <= 2:
+        return 1
+    
+    for _ in range(n - 2):
+        if x1 > x2:
+            x2 += x1
+            fibon_list.append(x2)
+        else:
+            x1 += x2
+            fibon_list.append(x1)
+    
+    fibon_num = max(x1,x2)
+    return fibon_list, fibon_num
+
+
+
+
+
+
+
+
+
+
 
 
