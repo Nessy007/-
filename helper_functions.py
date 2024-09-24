@@ -7,6 +7,9 @@
 
 ’’’
 
+
+def fibonacci_variant(n):
+    
 ‘‘‘
 生成斐波那契数列
 n:所需斐波那契数列长度
@@ -14,7 +17,7 @@ n:所需斐波那契数列长度
 fibon_list：斐波那契数列
 fibon_num：最后一位斐波那契数
 ’’’
-def fibonacci_variant(n):
+    
     x1, x2 = 1, 1
     fibon_list = []
     fibon_list.append(x1)
@@ -33,6 +36,10 @@ def fibonacci_variant(n):
     fibon_num = max(x1,x2)
     return fibon_list, fibon_num
 
+
+
+def find_min_max(seq):
+
 ‘‘‘
 同时寻找出列表的最大值和最小值
 seq：目标列表
@@ -40,8 +47,7 @@ seq：目标列表
 min：列表中最小值
 max：列表中最大值
 ’’’
-
-def find_min_max(seq):
+    
     min = seq[0]
     max = seq[0]
     for i in seq:
